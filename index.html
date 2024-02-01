@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Udemy</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kaisei+HarunoUmi:wght@400;700&family=Open+Sans&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="build/css/app.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+</head>
+<body>
+    <header class="header container-fluid d-none d-lg-block"> <!-- Header -->
+        <div class="d-flex justify-content-between align-items-center p-3 shadow-sm">
+            <p class="udemy fw-bold m-0 me-3"><span class="text-success">U</span>demy</p>
+
+            <nav class="nav">
+                <a href="#" class="nav-link">Categorias</a>
+            </nav>
+
+            <form class="flex-grow-1">
+                <div class="input-group">
+                    <span class="input-group-text"><i class="bi bi-search"></i></span>
+                    <input 
+                        type="search"
+                        class="form-control bg-light fs-5"
+                        placeholder="Busca cualquier cosa"
+                    >
+                </div>
+            </form>
+
+            <nav class="d-flex nav align-items-center">
+                <a href="#" class="nav-link">Udemy Business</a>
+                <a href="#" class="nav-link">Enseña en Udemy</a>
+                <a href="#" class="nav-link fs-4"><i class="bi bi-cart3"></i></a>
+            </nav>
+
+            <nav>
+                <a href="#" class="btn btn-outline-dark">Iniciar Sesión</a>
+                <a href="#" class="btn btn-dark">Registrate</a>
+                <a href="#" class="btn btn-outline-dark"><i class="bi bi-globe2"></i></a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="descuentos container-xl"> <!-- Descuentos -->
+        <div class="row justify-content-around align-items-lg-end bg-light">
+            <div class="col-lg-4 shadow bg-white texto-descuentos">
+                <div class="p-3">
+                    <h2>Último Día para disfrutar descuentos</h2>
+                    <p class="descripcion">
+                        Cursos desde 10 USD$. Utiliza el cupón 10USD para pagar únicamente 10 USD$ por el curso que desees.
+                    </p>
+
+                    <input 
+                        placeholder="¿Que quieres aprender?"
+                        type="search"
+                        class="form-control buscar"
+                    />
+                </div>
+            </div>
+
+            <div class="col-lg-5">
+                <img src="build/img/persona1.png" alt="imagen persona udemy" class="img-fluid">
+            </div>
+        </div>
+    </section>
+
+    <section class="container-logos bg-light"> <!-- Logos Empresas -->
+        <div class="container-xl">
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <h2 class="text-center fw-normal">Más de 15.000 empresas y millones de estudiantes de todo el mundo confían en nosotros</h2>
+                </div>
+
+                <div class="logos">
+                    <div class="logo d-flex justify-content-center">
+                        <img src="build/img/logo-01.svg" alt="logo empresa">
+                    </div>
+
+                    <div class="logo d-flex justify-content-center">
+                        <img src="build/img/logo-02.svg" alt="logo empresa">
+                    </div>
+
+                    <div class="logo d-flex justify-content-center">
+                        <img src="build/img/logo-03.svg" alt="logo empresa">
+                    </div>
+
+                    <div class="logo d-flex justify-content-center">
+                        <img src="build/img/logo-04.svg" alt="logo empresa">
+                    </div>
+
+                    <div class="logo d-flex justify-content-center">
+                        <img src="build/img/logo-05.svg" alt="logo empresa">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cursos container-xl mt-5 pt-5"> <!-- Una amplia selección de cursos -->
+        <h3 class="fs-3">Una amplia selección de cursos</h3>
+        <p class="fs-4">Elige entre más de 210.000 cursos de vídeo en línea con nuevo contenido cada mes</p>
+
+        <nav class="nav">
+            <li class="nav-item">
+                <a href="#" class="nav-link active">JavaScript</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">Python</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">React Native</a>
+            </li>
+        </nav>
+
+        <div class="categoria-curso p-4 mt-3">
+            <p class="fs-4 fw-bold">Mejora tus habilidades de desarrollo de software con JavaScript</p>
+            
+            <div class="row">
+                <div class="col-md-8">
+                    <p>JavaScript es uno de los lenguajes de programación más extendidos del mundo, sobre todo porque es la columna vertebral de las aplicaciones web interactivas. Además, JavaScript es un lenguaje estupendo para los principiantes, porque les da la oportunidad de escribir un código que hace algo visual, lo que resulta útil y...</p>
+                </div>
+            </div>
+
+            <a href="#" class="btn btn-outline-dark">Explorar JavaScript</a>
+
+            <ul class="list-unstyled mt-5 listado-cursos">
+                <li class="curso">
+                    <div class="card">
+                        <img src="build/img/curso_6.jpg" alt="imagen curso" class="card-img-top">
+
+                        <div class="card-body">
+                            <h4 class="titulo">Curso de JavaScript Moderno Guía Definitiva Construye +10 Proyectos</h4>
+                            <p class="instructor m-0">Jose Pedro Instructor</p>
+
+                            <div class="d-flex align-items-center">
+                                <p class="m-0 me-2 fw-bold text-secondary">4.7</p>
+                                
+                                <img class="me-2 calificacion" src="build/img/estrellas.png" alt="estrellas">
+
+                                <p class="m-0 total">(3121)</p>
+                            </div>
+
+                            <p class="precio fw-bold">10 USD$ <span class="original fw-normal"><del>200 USD$</del></span></p>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="curso">
+                    <div class="card">
+                        <img src="build/img/curso_2.jpg" alt="imagen curso" class="card-img-top">
+
+                        <div class="card-body">
+                            <h4 class="titulo">Diseño de UX y UI: Fundamentos para el diseño de interfaces</h4>
+                            <p class="instructor m-0">Jose Pedro Instructor</p>
+
+                            <div class="d-flex align-items-center">
+                                <p class="m-0 me-2 fw-bold text-secondary">4.7</p>
+                                
+                                <img class="me-2 calificacion" src="build/img/estrellas.png" alt="estrellas">
+
+                                <p class="m-0 total">(3121)</p>
+                            </div>
+
+                            <p class="precio fw-bold">10 USD$ <span class="original fw-normal"><del>200 USD$</del></span></p>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="curso">
+                    <div class="card">
+                        <img src="build/img/curso_10.jpg" alt="imagen curso" class="card-img-top">
+
+                        <div class="card-body">
+                            <h4 class="titulo">Fullstack React: Aplicaciones modernas con React, Node, Express y MongoDB</h4>
+                            <p class="instructor m-0">Jose Pedro Instructor</p>
+
+                            <div class="d-flex align-items-center">
+                                <p class="m-0 me-2 fw-bold text-secondary">4.7</p>
+                                
+                                <img class="me-2 calificacion" src="build/img/estrellas.png" alt="estrellas">
+
+                                <p class="m-0 total">(3121)</p>
+                            </div>
+
+                            <p class="precio fw-bold">10 USD$ <span class="original fw-normal"><del>200 USD$</del></span></p>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="curso">
+                    <div class="card">
+                        <img src="build/img/curso_9.jpg" alt="imagen curso" class="card-img-top">
+
+                        <div class="card-body">
+                            <h4 class="titulo">Curso de Desarrollo Web Completo 2021: HTML, CSS, JS, Node, y MongoDB</h4>
+                            <p class="instructor m-0">Jose Pedro Instructor</p>
+
+                            <div class="d-flex align-items-center">
+                                <p class="m-0 me-2 fw-bold text-secondary">4.7</p>
+                                
+                                <img class="me-2 calificacion" src="build/img/estrellas.png" alt="estrellas">
+
+                                <p class="m-0 total">(3121)</p>
+                            </div>
+
+                            <p class="precio fw-bold">10 USD$ <span class="original fw-normal"><del>200 USD$</del></span></p>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="curso">
+                    <div class="card">
+                        <img src="build/img/curso_3.jpg" alt="imagen curso" class="card-img-top">
+
+                        <div class="card-body">
+                            <h4 class="titulo">Diseño de interfaces con Figma: Fundamentos y técnicas avanzadas</h4>
+                            <p class="instructor m-0">Jose Pedro Instructor</p>
+
+                            <div class="d-flex align-items-center">
+                                <p class="m-0 me-2 fw-bold text-secondary">4.7</p>
+                                
+                                <img class="me-2 calificacion" src="build/img/estrellas.png" alt="estrellas">
+
+                                <p class="m-0 total">(3121)</p>
+                            </div>
+
+                            <p class="precio fw-bold">10 USD$ <span class="original fw-normal"><del>200 USD$</del></span></p>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="curso d-lg-none">
+                    <div class="card">
+                        <img src="build/img/curso_12.jpg" alt="imagen curso" class="card-img-top">
+
+                        <div class="card-body">
+                            <h4 class="titulo">Bootcamp Backend Developer: Node, Express, MongoDB y GraphQL</h4>
+                            <p class="instructor m-0">Jose Pedro Instructor</p>
+
+                            <div class="d-flex align-items-center">
+                                <p class="m-0 me-2 fw-bold text-secondary">4.7</p>
+                                
+                                <img class="me-2 calificacion" src="build/img/estrellas.png" alt="estrellas">
+
+                                <p class="m-0 total">(3121)</p>
+                            </div>
+
+                            <p class="precio fw-bold">10 USD$ <span class="original fw-normal"><del>200 USD$</del></span></p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <main class="container-xl py-5"> <!-- Los estudiantes están viendo -->
+        <p class="fs-4 fw-bold">Los estudiantes están viendo</p>
+
+        <ul class="list-unstyled mt-3 listado-cursos">
+            <li class="curso">
+                <div class="card">
+                    <img src="build/img/curso_1.jpg" alt="imagen curso" class="card-img-top">
+
+                    <div class="card-body">
+                        <h4 class="titulo">Curso de Guitarra - Principios Básicos</h4>
+                        <p class="instructor m-0">Jose Pedro Instructor</p>
+
+                        <div class="d-flex align-items-center">
+                            <p class="m-0 me-2 fw-bold text-secondary">4.7</p>
+                            
+                            <img class="me-2 calificacion" src="build/img/estrellas.png" alt="estrellas">
+
+                            <p class="m-0 total">(3121)</p>
+                        </div>
+
+                        <p class="precio fw-bold">10 USD$ <span class="original fw-normal"><del>200 USD$</del></span></p>
+                    </div>
+                </div>
+            </li>
+
+            <li class="curso">
+                <div class="card">
+                    <img src="build/img/curso_4.jpg" alt="imagen curso" class="card-img-top">
+
+                    <div class="card-body">
+                        <h4 class="titulo">Fotografia para Pincipiantes - Cámara y Equipo necesario</h4>
+                        <p class="instructor m-0">Jose Pedro Instructor</p>
+
+                        <div class="d-flex align-items-center">
+                            <p class="m-0 me-2 fw-bold text-secondary">4.7</p>
+                            
+                            <img class="me-2 calificacion" src="build/img/estrellas.png" alt="estrellas">
+
+                            <p class="m-0 total">(3121)</p>
+                        </div>
+
+                        <p class="precio fw-bold">10 USD$ <span class="original fw-normal"><del>200 USD$</del></span></p>
+                    </div>
+                </div>
+            </li>
+
+            <li class="curso">
+                <div class="card">
+                    <img src="build/img/curso_5.jpg" alt="imagen curso" class="card-img-top">
+
+                    <div class="card-body">
+                        <h4 class="titulo">Curso de Ventas por Internet e Instagram</h4>
+                        <p class="instructor m-0">Jose Pedro Instructor</p>
+
+                        <div class="d-flex align-items-center">
+                            <p class="m-0 me-2 fw-bold text-secondary">4.7</p>
+                            
+                            <img class="me-2 calificacion" src="build/img/estrellas.png" alt="estrellas">
+
+                            <p class="m-0 total">(3121)</p>
+                        </div>
+
+                        <p class="precio fw-bold">10 USD$ <span class="original fw-normal"><del>200 USD$</del></span></p>
+                    </div>
+                </div>
+            </li>
+
+            <li class="curso">
+                <div class="card">
+                    <img src="build/img/curso_7.jpg" alt="imagen curso" class="card-img-top">
+
+                    <div class="card-body">
+                        <h4 class="titulo">Fundamentos Básicos de Diseño UX y UI</h4>
+                        <p class="instructor m-0">Jose Pedro Instructor</p>
+
+                        <div class="d-flex align-items-center">
+                            <p class="m-0 me-2 fw-bold text-secondary">4.7</p>
+                            
+                            <img class="me-2 calificacion" src="build/img/estrellas.png" alt="estrellas">
+
+                            <p class="m-0 total">(3121)</p>
+                        </div>
+
+                        <p class="precio fw-bold">10 USD$ <span class="original fw-normal"><del>200 USD$</del></span></p>
+                    </div>
+                </div>
+            </li>
+
+            <li class="curso">
+                <div class="card">
+                    <img src="build/img/curso_8.jpg" alt="imagen curso" class="card-img-top">
+
+                    <div class="card-body">
+                        <h4 class="titulo">Diseño de Tiendas Virtuales con WooCommerce y Wordpress</h4>
+                        <p class="instructor m-0">Jose Pedro Instructor</p>
+
+                        <div class="d-flex align-items-center">
+                            <p class="m-0 me-2 fw-bold text-secondary">4.7</p>
+                            
+                            <img class="me-2 calificacion" src="build/img/estrellas.png" alt="estrellas">
+
+                            <p class="m-0 total">(3121)</p>
+                        </div>
+
+                        <p class="precio fw-bold">10 USD$ <span class="original fw-normal"><del>200 USD$</del></span></p>
+                    </div>
+                </div>
+            </li>
+
+            <li class="curso d-lg-none">
+                <div class="card">
+                    <img src="build/img/curso_11.jpg" alt="imagen curso" class="card-img-top">
+
+                    <div class="card-body">
+                        <h4 class="titulo">Inversiones y Acciones para Principiantes</h4>
+                        <p class="instructor m-0">Jose Pedro Instructor</p>
+
+                        <div class="d-flex align-items-center">
+                            <p class="m-0 me-2 fw-bold text-secondary">4.7</p>
+                            
+                            <img class="me-2 calificacion" src="build/img/estrellas.png" alt="estrellas">
+
+                            <p class="m-0 total">(3121)</p>
+                        </div>
+
+                        <p class="precio fw-bold">10 USD$ <span class="original fw-normal"><del>200 USD$</del></span></p>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </main>
+
+    <section class="container-xl categorias mt-3"> <!-- Categorías Principales -->
+        <p class="fs-4 fw-bold">Categorías Principales</p>
+
+        <ul class="list-unstyled grid">
+            <li class="g-col-6 g-col-md-4 g-col-lg-3">
+                <a href="#" class="text-decoration-none">
+                    <div class="bg-light">
+                        <img src="build/img/iconos-01.png" alt="imagen icono" class="img-fluid">
+                    </div>
+                    
+                    <p class="fw-bold mt-2">Diseño</p>
+                </a>
+            </li>
+
+            <li class="g-col-6 g-col-md-4 g-col-lg-3">
+                <a href="#" class="text-decoration-none">
+                    <div class="bg-light">
+                        <img src="build/img/iconos-02.png" alt="imagen icono" class="img-fluid">
+                    </div>
+                    
+                    <p class="fw-bold mt-2">Desarrollo</p>
+                </a>
+            </li>
+
+            <li class="g-col-6 g-col-md-4 g-col-lg-3">
+                <a href="#" class="text-decoration-none">
+                    <div class="bg-light">
+                        <img src="build/img/iconos-03.png" alt="imagen icono" class="img-fluid">
+                    </div>
+                    
+                    <p class="fw-bold mt-2">Marketing</p>
+                </a>
+            </li>
+
+            <li class="g-col-6 g-col-md-4 g-col-lg-3">
+                <a href="#" class="text-decoration-none">
+                    <div class="bg-light">
+                        <img src="build/img/iconos-04.png" alt="imagen icono" class="img-fluid">
+                    </div>
+                    
+                    <p class="fw-bold mt-2">Informática y Software</p>
+                </a>
+            </li>
+
+            <li class="g-col-6 g-col-md-4 g-col-lg-3">
+                <a href="#" class="text-decoration-none">
+                    <div class="bg-light">
+                        <img src="build/img/iconos-05.png" alt="imagen icono" class="img-fluid">
+                    </div>
+                    
+                    <p class="fw-bold mt-2">Desarrollo Personal</p>
+                </a>
+            </li>
+
+            <li class="g-col-6 g-col-md-4 g-col-lg-3">
+                <a href="#" class="text-decoration-none">
+                    <div class="bg-light">
+                        <img src="build/img/iconos-06.png" alt="imagen icono" class="img-fluid">
+                    </div>
+                    
+                    <p class="fw-bold mt-2">Negocios</p>
+                </a>
+            </li>
+
+            <li class="g-col-6 g-col-md-4 g-col-lg-3">
+                <a href="#" class="text-decoration-none">
+                    <div class="bg-light">
+                        <img src="build/img/iconos-07.png" alt="imagen icono" class="img-fluid">
+                    </div>
+                    
+                    <p class="fw-bold mt-2">Fotografía</p>
+                </a>
+            </li>
+
+            <li class="g-col-6 g-col-md-4 g-col-lg-3">
+                <a href="#" class="text-decoration-none">
+                    <div class="bg-light">
+                        <img src="build/img/iconos-08.png" alt="imagen icono" class="img-fluid">
+                    </div>
+                    
+                    <p class="fw-bold mt-2">Música</p>
+                </a>
+            </li>
+        </ul>
+    </section>
+
+    <section class="listado-categorios py-5 mt-5 bg-light"> <!-- Temas destacados por categoría -->
+        <div class="container-xl">
+            <p class="fs-4 fw-bold">Temas destacados por categoría</p>
+            
+            <div class="row">
+                <div class="col-12 col-sm-6 col-md-3">
+                    <p class="fw-bold fs-4">Desarrollo</p>
+
+                    <ul class="list-unstyled">
+                        <li class="mb-4">
+                            <a class="text-success fw-bold fs-5" href="#">Python</a>
+                            <p>36,354,994 Estudiantes</p>
+                        </li>
+
+                        <li class="mb-4">
+                            <a class="text-success fw-bold fs-5" href="#">Desarrollo Web</a>
+                            <p>11,415,615 Estudiantes</p>
+                        </li>
+
+                        <li class="mb-4">
+                            <a class="text-success fw-bold fs-5" href="#">Apredizaje Automático</a>
+                            <p>7,070,015 Estudiantes</p>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-12 col-sm-6 col-md-3">
+                    <p class="fw-bold fs-4">Negocios</p>
+
+                    <ul class="list-unstyled">
+                        <li class="mb-4">
+                            <a class="text-success fw-bold fs-5" href="#">Análisis Financiero</a>
+                            <p>1,195,282 Estudiantes</p>
+                        </li>
+
+                        <li class="mb-4">
+                            <a class="text-success fw-bold fs-5" href="#">SQL</a>
+                            <p>5,977,561 Estudiantes</p>
+                        </li>
+
+                        <li class="mb-4">
+                            <a class="text-success fw-bold fs-5" href="#">PMP</a>
+                            <p>1,733,398 Estudiantes</p>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-12 col-sm-6 col-md-3">
+                    <p class="fw-bold fs-4">Informática y Software</p>
+
+                    <ul class="list-unstyled">
+                        <li class="mb-4">
+                            <a class="text-success fw-bold fs-5" href="#">Certificacíon AWS</a>
+                            <p>6,123,456 Estudiantes</p>
+                        </li>
+
+                        <li class="mb-4">
+                            <a class="text-success fw-bold fs-5" href="#">Hacking Ético</a>
+                            <p>10,931,066 Estudiantes</p>
+                        </li>
+
+                        <li class="mb-4">
+                            <a class="text-success fw-bold fs-5" href="#">Seguridad Informática</a>
+                            <p>3,998,037 Estudiantes</p>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-12 col-sm-6 col-md-3">
+                    <p class="fw-bold fs-4">Diseño</p>
+
+                    <ul class="list-unstyled">
+                        <li class="mb-4">
+                            <a class="text-success fw-bold fs-5" href="#">Photoshop</a>
+                            <p>10,909,736 Estudiantes</p>
+                        </li>
+
+                        <li class="mb-4">
+                            <a class="text-success fw-bold fs-5" href="#">Diseño Gráfico</a>
+                            <p>3,381,052 Estudiantes</p>
+                        </li>
+
+                        <li class="mb-4">
+                            <a class="text-success fw-bold fs-5" href="#">Dibujo</a>
+                            <p>2,410,849 Estudiantes</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <a href="#" class="btn btn-outline-dark">Descubrir más temas</a>
+        </div>
+    </section>
+
+    <section class="bg-light mt-5"> <!-- Aprende a tu ritmo -->
+        <div class="container-xl">
+            <div class="row justify-content-between align-items-center">
+                <div class="col-lg-3 mb-5 mb-lg-0">
+                    <div class="d-flex justify-content-around align-items-center">
+                        <div class="me-3">
+                            <div class="icono">
+                                <i class="bi bi-play-fill fs-3"></i>
+                            </div>
+                        </div>
+
+                        <p class="fw-bold m-0">
+                            Aprende habilidades a tu ritmo con mas de 210.000 cursos en video
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 mb-5 mb-lg-0">
+                    <div class="d-flex justify-content-around align-items-center">
+                        <div class="me-3">
+                            <div class="icono">
+                                <i class="bi bi-star-fill fs-3"></i>
+                            </div>
+                        </div>
+
+                        <p class="fw-bold m-0">
+                            Compra cursos impartidos por expertos del mundo real y obten un empleo
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 mb-5 mb-lg-0">
+                    <div class="d-flex justify-content-around align-items-center">
+                        <div class="me-3">
+                            <div class="icono">
+                                <i class="bi bi-phone-fill fs-3"></i>
+                            </div>
+                        </div>
+
+                        <p class="fw-bold m-0">
+                            Aprende a tu ritmo, con acceso de por vida desde ordenadores o dispositivos móviles
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container-xl"> <!-- Udemy Business -->
+        <div class="row justify-content-center align-items-center">
+            <div class="col-md-5 order-2 order-md-1">
+                <p class="fw-bold fs-5"> Udemy <span class="text-success fw-normal">business</span></p>
+
+                <h2 class="fs-3 mb-3">Desarrolla las habilidades de tu equipo gracias a Udemy Business</h2>
+
+                <ul>
+                    <li>
+                        <p>Acceso ilimitado a más de 25.000 de los mejores cursos de Udemy en cualquier momento y lugar</p>
+                    </li>
+                    <li>
+                        <p>Colección internacional de cursos en 14 idiomas</p>
+                    </li>
+                    <li>
+                        <p>Las certificaciones más populares en tecnología y empresas</p>
+                    </li>
+                </ul>
+
+                <a href="#" class="btn btn-dark">Obtener Udemy Business</a>
+            </div>
+
+            <div class="col-md-5 order-1 mb-3 m-mb-0">
+                <img src="build/img/persona3.png" alt="imagen persona" class="img-fluid">
+            </div>
+        </div>
+    </section>
+
+    <section class="container-xl"> <!-- Conviértete en Instructor -->
+        <div class="row justify-content-center align-items-center">
+            <div class="col-md-5 mb-3 m-mb-0">
+                <img src="build/img/persona2.png" alt="imagen persona" class="img-fluid">
+            </div>
+            
+            <div class="col-md-5">
+                <h2 class="fs-3">Conviértete en Instructor</h2>
+                <p>Instructores de todo el mundo enseñan a millones de estudiantes en Udemy. Proporcionamos las herramientas y las habilidades para que enseñes lo que te apasiona.</p>
+
+                <a href="#" class="btn btn-dark">Empieza a enseñar hoy mismo</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="container-xl py-5"> <!-- Transforma tu vida mediante la educacion -->
+        <div class="row justify-content-center align-items-center">
+            <div class="col-md-5 order-2 order-md-1">
+                <h2 class="fs-3 mb-3">Transforma tu vida mediante la educacion</h2>
+
+                <p>Conviértete en un instructor de Udemy y transforma la vida de millones de estudiantes de todo el mundo. Aprende a crear un curso, construir una audiencia y obtener ingresos pasivos.</p>
+
+                <a href="#" class="btn btn-dark">Descubre cómo</a>
+            </div>
+
+            <div class="col-md-5 order-1 mb-3 m-mb-0">
+                <img src="build/img/transforma.png" alt="imagen transforma" class="img-fluid">
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark pt-5"> <!-- Footer -->
+        <div class="container-xl">
+            <div class="row align-items-start">
+                <nav class="col-md-2 d-grid gap-2">
+                    <a href="#" class="text-light text-decoration-none">Udemy Business</a>
+                    <a href="#" class="text-light text-decoration-none">Enseña en Udemy</a>
+                    <a href="#" class="text-light text-decoration-none">Consigue la aplicación</a>
+                    <a href="#" class="text-light text-decoration-none">¿Quiénes somos?</a>
+                    <a href="#" class="text-light text-decoration-none">Ponte en contacto con nosotros</a>
+                </nav>
+
+                <nav class="col-md-2 d-grid gap-2">
+                    <a href="#" class="text-light text-decoration-none">Empleo</a>
+                    <a href="#" class="text-light text-decoration-none">Blog</a>
+                    <a href="#" class="text-light text-decoration-none">Ayuda y asistencia</a>
+                    <a href="#" class="text-light text-decoration-none">Afiliado</a>
+                    <a href="#" class="text-light text-decoration-none">Inversores</a>
+                </nav>
+
+                <nav class="col-md-2 d-grid gap-2">
+                    <a href="#" class="text-light text-decoration-none">Condiciones</a>
+                    <a href="#" class="text-light text-decoration-none">Política de privacidad</a>
+                    <a href="#" class="text-light text-decoration-none">Configuración de cookies</a>
+                    <a href="#" class="text-light text-decoration-none">Mapa del sitio</a>
+                    <a href="#" class="text-light text-decoration-none">Declaración de accesibilidad</a>
+                </nav>
+
+                <div class="col-md-2 ms-auto mt-5 mt-md-0">
+                    <a href="#" class="btn btn-outline-light">
+                        <!-- Icono Global -->
+                        <i class="bi bi-globe2"></i>
+                        Español
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-xl mt-5 d-flex justify-content-between align-items-center">
+            <p class="text-success fs-3 fw-bold">U<span class="text-light ">demy</span></p>
+
+            <p class="text-light">© 2024 Udemy, Inc.</p>
+        </div>
+    </footer>
+</body>
+</html>
